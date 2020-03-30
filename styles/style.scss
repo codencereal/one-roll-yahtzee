@@ -22,16 +22,31 @@ body {
   background: #006079;
 }
 
-.dice {
+.container {
   background: #007896;
   max-width: 75vw;
-  margin: 0 auto;
   display: flex;
-  justify-content: space-around;
-}
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  margin: 5vh auto;
+  padding: 10px;
 
-.die {
-  border: 2px solid black;
-  border-radius: 10%;
-  width: 10vw;
+  .dice {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .die {
+    border: 2px solid black;
+    border-radius: 10%;
+    width: 10vw;
+  }
+  .options {
+    padding: 7px 0;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
