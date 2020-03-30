@@ -2,7 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Sen:wght@700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sen:wght@700;800&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -98,7 +98,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10vh auto;
+  margin: 7.5vh auto;
   padding: 100px 50px;
 }
 
@@ -131,5 +131,26 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   color: #fff;
+}
+
+.container .options .btn {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+}
+
+.btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background: #0093b8;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.btn:hover {
+  background: #00b1dd;
 }
 /*# sourceMappingURL=style.css.map */
