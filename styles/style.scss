@@ -36,6 +36,7 @@ body {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    padding-top: 1.5rem;
   }
 
   .die {
@@ -48,5 +49,10 @@ body {
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
+    label {
+      font-family: 'Roboto', sans-serif;
+      font-weight: normal;
+      color: #fff;
+    }
   }
 }
