@@ -130,6 +130,8 @@ header {
   gap: 10px;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  min-width: 25vw;
+  text-align: center;
 }
 
 .container .options label {
