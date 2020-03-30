@@ -74,7 +74,6 @@ header h1 {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
-  position: relative;
   font-family: 'Sen', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
@@ -100,9 +99,5 @@ body {
   border: 2px solid black;
   border-radius: 10%;
   width: 10vw;
-}
-
-.options {
-  display: static;
 }
 /*# sourceMappingURL=style.css.map */
