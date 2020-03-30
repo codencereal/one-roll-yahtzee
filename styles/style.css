@@ -82,11 +82,12 @@ header h1 {
 
 body {
   background: #006079;
+  height: 100vh;
 }
 
 .container {
   background: #007896;
-  max-width: 75vw;
+  max-width: 65vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,15 +98,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5vh auto;
-  padding: 10px;
+  margin: 10vh auto;
+  padding: 100px 50px;
 }
 
 .container .dice {
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -117,7 +118,7 @@ body {
 }
 
 .container .options {
-  padding: 7px 0;
+  padding: 2rem 0;
   display: -ms-grid;
   display: grid;
   gap: 10px;

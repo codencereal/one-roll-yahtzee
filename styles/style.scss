@@ -20,21 +20,21 @@ header {
 
 body {
   background: #006079;
+  height: 100vh;
 }
 
 .container {
   background: #007896;
-  max-width: 75vw;
+  max-width: 65vw;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
-  margin: 5vh auto;
-  padding: 10px;
+  margin: 10vh auto;
+  padding: 100px 50px;
 
   .dice {
-    margin: 0 auto;
     display: flex;
+    width: 100%;
     justify-content: space-around;
   }
 
@@ -44,7 +44,7 @@ body {
     width: 10vw;
   }
   .options {
-    padding: 7px 0;
+    padding: 2rem 0;
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
