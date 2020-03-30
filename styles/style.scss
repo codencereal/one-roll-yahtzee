@@ -8,6 +8,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  
   h1 {
     width: fit-content;
     margin: auto;
@@ -40,15 +41,16 @@ body {
   }
 
   .die {
-    border: 2px solid black;
     border-radius: 10%;
     width: 10vw;
   }
+
   .options {
     padding: 2rem 0;
     display: grid;
     gap: 10px;
     grid-template-columns: 1fr 1fr;
+
     label {
       font-family: 'Roboto', sans-serif;
       font-weight: normal;
@@ -69,6 +71,7 @@ body {
   background: #0093b8;
   border-radius: 20px;
   padding: 1rem;
+
   &:hover {
     background: #00b1dd;
   }
