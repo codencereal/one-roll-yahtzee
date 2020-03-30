@@ -23,7 +23,17 @@ body {
   background: #006079;
 }
 
+.dice {
+  background: #007896;
+  max-width: 75vw;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
 .die {
   border: 2px solid black;
   border-radius: 10%;
+  width: 10vw;
 }
