@@ -53,6 +53,22 @@ table {
   border-spacing: 0;
 }
 
+.primary-btn {
+  font-family: 'Sen', sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background: #0093b8;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.primary-btn:hover {
+  background: #00b1dd;
+}
+
 body {
   background: #006079;
   height: 100vh;
@@ -140,25 +156,9 @@ header {
   color: #fff;
 }
 
-.container .options .btn {
+.container .options .primary-btn {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / span 2;
-}
-
-.btn {
-  font-family: 'Sen', sans-serif;
-  font-weight: bold;
-  font-size: 1.25rem;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  background: #0093b8;
-  border-radius: 20px;
-  padding: 1rem;
-}
-
-.btn:hover {
-  background: #00b1dd;
 }
 /*# sourceMappingURL=style.css.map */

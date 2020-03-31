@@ -1,0 +1,15 @@
+.primary-btn {
+  font-family: 'Sen', sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: $text-colour;
+  text-decoration: none;
+  text-align: center;
+  background: $secondary;
+  border-radius: 20px;
+  padding: 1rem;
+
+  &:hover {
+    background: #00b1dd;
+  }
+}

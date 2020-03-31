@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'variables';
+@import 'buttons';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sen:wght@700;800&display=swap');
 
 body {
@@ -65,24 +66,8 @@ header {
       font-weight: normal;
       color: $text-colour;
     }
-    .btn {
+    .primary-btn {
       grid-column: 1 / span 2;
     }
-  }
-}
-
-.btn {
-  font-family: 'Sen', sans-serif;
-  font-weight: bold;
-  font-size: 1.25rem;
-  color: $text-colour;
-  text-decoration: none;
-  text-align: center;
-  background: $secondary;
-  border-radius: 20px;
-  padding: 1rem;
-
-  &:hover {
-    background: #00b1dd;
   }
 }
