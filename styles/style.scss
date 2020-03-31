@@ -1,8 +1,9 @@
 @import 'reset';
+@import 'variables';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sen:wght@700;800&display=swap');
 
 body {
-  background: #006079;
+  background: $bg;
   height: 100vh;
 }
 
@@ -12,12 +13,12 @@ h1 {
   font-family: 'Sen', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
-  color: #fff;
+  color: $text-colour;
 }
 
 header {
-  background: #0093b8;
-  box-shadow: 0px 2px 0px 4px rgba(0,120,150,0.5);
+  background: $secondary;
+  box-shadow: 0px 2px 0px 4px rgba(0, 120, 150, 0.50);
   height: 10vh;
   display: flex;
   align-items: center;
@@ -25,7 +26,7 @@ header {
 }
 
 .container {
-  background: #007896;
+  background: $primary;
   max-width: 65vw;
   display: flex;
   flex-direction: column;
@@ -62,7 +63,7 @@ header {
     label {
       font-family: 'Roboto', sans-serif;
       font-weight: normal;
-      color: #fff;
+      color: $text-colour;
     }
     .btn {
       grid-column: 1 / span 2;
@@ -74,10 +75,10 @@ header {
   font-family: 'Sen', sans-serif;
   font-weight: bold;
   font-size: 1.25rem;
-  color: #fff;
+  color: $text-colour;
   text-decoration: none;
   text-align: center;
-  background: #0093b8;
+  background: $secondary;
   border-radius: 20px;
   padding: 1rem;
 
