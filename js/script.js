@@ -1,5 +1,10 @@
 let manualRoll = sessionStorage.getItem('manualRoll') == 'true';
 let allRolls = sessionStorage.getItem('allRolls') == 'true';
+let returnToTop = document.createElement("h2");
+let a = document.createElement("a");
+a.href = "#attempts";
+a.textContent = "Click here to return to the top";
+returnToTop.appendChild(a);
 
 function yahtzee() {
   let dice = [];
@@ -16,16 +21,17 @@ function yahtzee() {
       dice[i] = diceRoll;
     }
 
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i < 5; i++) {
       if (dice[i-1] === dice[i]) { // Checks each item in the array to see if it matches the previous item
         temp++;
       } else {
         temp = 0;
-        createRoll(dice);
+        createRoll(dice, false);
         break;
       }
       if (temp === 4) {
         console.log('Yahtzee!!');
+        createRoll(dice, true);
         isYahtzee = true;
       }
     }
@@ -35,7 +41,7 @@ function yahtzee() {
   console.log('You rolled five ' + dice[0] + 's in ' + attempts + ' attempts');
 }
 
-function createRoll(rolledDice) {
+function createRoll(rolledDice, isWinningRoll) {
   let outerDiv = document.createElement("div");
   let innerDiv = document.createElement("div");
   let dice = document.createElement("div");
@@ -44,6 +50,8 @@ function createRoll(rolledDice) {
   let dieArray = [];
 
   outerDiv.className = "outer-container";
+  if (isWinningRoll)
+    outerDiv.id = "winning-roll";
   innerDiv.className = "inner-container";
   dice.className = "dice";
   rolls.className = "rolls";
@@ -64,6 +72,8 @@ function createRoll(rolledDice) {
   innerDiv.appendChild(rolls);
   outerDiv.appendChild(innerDiv);
   document.body.appendChild(outerDiv);
+  if (isWinningRoll)
+    document.body.appendChild(returnToTop);
 }
 
 yahtzee();
