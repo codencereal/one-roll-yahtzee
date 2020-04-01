@@ -79,7 +79,7 @@ function createRoll(rolledDice, isWinningRoll) {
 
 function rollDice(dice, numberOfSides, numberofDice) {
   let diceRoll;
-  for (let i = 0; i < numberofDice; i++) { // Generates 5 random numbers from 1-6
+  for (let i = 0; i < numberofDice; i++) {
     diceRoll = Math.floor((Math.random() * numberOfSides) + 1);
     dice[i] = diceRoll;
   }
