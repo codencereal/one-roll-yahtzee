@@ -9,7 +9,6 @@ returnToTop.appendChild(a);
 
 function autoYahtzee() {
   let dice = [];
-  let diceRoll;
   let isYahtzee = false;
   let attempts = 0;
   let temp = 1;
@@ -17,10 +16,7 @@ function autoYahtzee() {
   let attemptsText = document.getElementById("attempts");
 
   while (!isYahtzee){
-    for (let i = 0; i < 5; i++) { // Generates 5 random numbers from 1-6
-      diceRoll = Math.floor((Math.random() * numberOfSides) + 1);
-      dice[i] = diceRoll;
-    }
+      rollDice(dice, numberOfSides, 5)
 
     for (let i = 1; i < 5; i++) {
       if (dice[i-1] === dice[i]) { // Checks each item in the array to see if it matches the previous item
@@ -79,6 +75,14 @@ function createRoll(rolledDice, isWinningRoll) {
   document.body.appendChild(outerDiv);
   if (isWinningRoll)
     document.body.appendChild(returnToTop);
+}
+
+function rollDice(dice, numberOfSides, numberofDice) {
+  let diceRoll;
+  for (let i = 0; i < numberofDice; i++) { // Generates 5 random numbers from 1-6
+    diceRoll = Math.floor((Math.random() * numberOfSides) + 1);
+    dice[i] = diceRoll;
+  }
 }
 
 if (allRolls === true)
