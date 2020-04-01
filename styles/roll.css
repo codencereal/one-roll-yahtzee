@@ -99,6 +99,7 @@ h1 {
 
 #attempts {
   padding-top: 1.25rem;
+  padding-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
