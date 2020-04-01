@@ -56,6 +56,10 @@ h2 {
   }
 }
 
+.buttons {
+  @include flex-center();
+}
+
 .rolls {
   @include flex-center();
 }
