@@ -158,6 +158,10 @@ h2 #return-to-top {
           justify-content: center;
 }
 
+#manual-dice .die {
+  width: 7vw;
+}
+
 #sarcastic-warning {
   padding-top: 1.25rem;
   padding-bottom: 1rem;
@@ -196,7 +200,7 @@ h2 #return-to-top {
 }
 
 .dice {
-  padding: 1.5rem;
+  padding: 1.5rem 0rem;
 }
 
 .dice .die {

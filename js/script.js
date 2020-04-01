@@ -87,5 +87,3 @@ function rollDice(dice, numberOfSides, numberofDice) {
 
 if (allRolls === true)
   autoYahtzee();
-else
-  manualYahtzee();

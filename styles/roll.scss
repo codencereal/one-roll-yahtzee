@@ -34,6 +34,12 @@ h2 {
   @include flex-center();
 }
 
+#manual-dice {
+  .die {
+    width: 7vw;
+  }
+}
+
 #sarcastic-warning {
   @include h1-padding();
   @include flex-center();
@@ -49,7 +55,7 @@ h2 {
 @include dice();
 
 .dice {
-  padding: 1.5rem;
+  padding: 1.5rem 0rem;
 
   .die {
     width: 5vw;
