@@ -30,8 +30,12 @@ h2 {
 }
 
 #attempts {
-  padding-top: 1.25rem;
-  padding-bottom: 1rem;
+  @include h1-padding();
+  @include flex-center();
+}
+
+#sarcastic-warning {
+  @include h1-padding();
   @include flex-center();
 }
 

@@ -140,6 +140,20 @@ h2 #return-to-top {
           justify-content: center;
 }
 
+#sarcastic-warning {
+  padding-top: 1.25rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #winning-roll {
   background: #daa520;
 }

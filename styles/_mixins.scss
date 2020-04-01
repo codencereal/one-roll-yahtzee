@@ -17,3 +17,8 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin h1-padding {
+  padding-top: 1.25rem;
+  padding-bottom: 1rem;
+}
