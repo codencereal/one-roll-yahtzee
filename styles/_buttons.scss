@@ -8,6 +8,8 @@
   background: $secondary;
   border-radius: 20px;
   padding: 1rem;
+  border: none;
+  cursor: pointer;
 
   &:hover {
     background: #00b1dd;

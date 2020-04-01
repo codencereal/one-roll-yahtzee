@@ -63,6 +63,8 @@ table {
   background: #0093b8;
   border-radius: 20px;
   padding: 1rem;
+  border: none;
+  cursor: pointer;
 }
 
 .primary-btn:hover {
