@@ -138,6 +138,14 @@ h2 #return-to-top {
           justify-content: center;
 }
 
+#winning-roll {
+  background: #daa520;
+}
+
+#winning-roll .die {
+  border: 3px solid #7a5d13;
+}
+
 .dice {
   display: -webkit-box;
   display: -ms-flexbox;
