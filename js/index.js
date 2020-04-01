@@ -8,7 +8,7 @@ function getOptionsAndRedirect() {
     location.reload;
   }
   else if (allRolls && !manualRoll) {
-    window.location.replace("../pages/roll.html");
+    window.location.replace("../pages/instaroll.html");
   }
   else {
     window.location.replace("../pages/foo.html");
