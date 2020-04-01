@@ -1,0 +1,10 @@
+@mixin Sen-bold {
+  font-family: 'Sen', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+@mixin Roboto-normal {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
