@@ -2,6 +2,7 @@ let manualRoll = sessionStorage.getItem('manualRoll') == 'true';
 let allRolls = sessionStorage.getItem('allRolls') == 'true';
 let returnToTop = document.createElement("h2");
 let a = document.createElement("a");
+returnToTop.id = "return-to-top";
 a.href = "#attempts";
 a.textContent = "Click here to return to the top";
 returnToTop.appendChild(a);

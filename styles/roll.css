@@ -85,6 +85,12 @@ header {
           justify-content: center;
 }
 
+a {
+  text-decoration: underline;
+  color: #fff;
+  padding: 10px;
+}
+
 body {
   height: 100vh;
   background: #006079;
@@ -112,6 +118,10 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+h2 #return-to-top {
+  padding-bottom: 20px;
 }
 
 #attempts {
