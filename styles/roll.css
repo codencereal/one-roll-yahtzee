@@ -97,6 +97,23 @@ h1 {
   color: #fff;
 }
 
+h2 {
+  font-family: 'Sen', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  font-size: 1.15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #attempts {
   padding-top: 1.25rem;
   padding-bottom: 1rem;
