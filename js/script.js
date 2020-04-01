@@ -39,7 +39,30 @@ function autoYahtzee() {
 }
 
 function manualYahtzee() {
+  let dice = [];
+  let isYahtzee = false;
+  let attempts = 0;
+  let temp = 1;
+  let numberOfSides = 6;
+  let startBtn = document.getElementById("start-btn");
+  startBtn.textContent = "Roll";
 
+  rollDice(dice, numberOfSides, 6);
+
+  for (let i = 1; i < 5; i++) {
+    if (dice[i-1] === dice[i]) { // Checks each item in the array to see if it matches the previous item
+      temp++;
+    } else {
+      temp = 0;
+      updateDice(dice);
+      break;
+    }
+    if (temp === 4) {
+      console.log('Yahtzee!!');
+      createRoll(dice, true);
+      isYahtzee = true;
+    }
+  }
 }
 
 function createRoll(rolledDice, isWinningRoll) {
@@ -75,6 +98,13 @@ function createRoll(rolledDice, isWinningRoll) {
   document.body.appendChild(outerDiv);
   if (isWinningRoll)
     document.body.appendChild(returnToTop);
+}
+
+function updateDice(rolledDice) {
+  for (let i = 1; i <= 5; i++) {
+    let die = document.getElementById('die-' + i.toString());
+    die.src = "../img/dice-" + rolledDice[i] + ".png";
+  }
 }
 
 function rollDice(dice, numberOfSides, numberofDice) {
