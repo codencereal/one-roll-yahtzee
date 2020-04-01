@@ -126,6 +126,14 @@ h1 {
   width: 10vw;
 }
 
+.dice {
+  padding: 1.5rem;
+}
+
+.dice .die {
+  width: 5vw;
+}
+
 .rolls {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,9 +158,8 @@ p {
 
 .outer-container {
   background: #007896;
-  max-width: 75vw;
-  margin: auto;
-  margin-top: 2.5vh;
+  max-width: 80vw;
+  margin: 2.5vh auto;
 }
 
 .inner-container {

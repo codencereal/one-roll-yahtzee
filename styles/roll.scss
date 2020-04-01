@@ -22,6 +22,14 @@ h1 {
 
 @include dice();
 
+.dice {
+  padding: 1.5rem;
+
+  .die {
+    width: 5vw;
+  }
+}
+
 .rolls {
   @include flex-center();
 }
@@ -33,9 +41,8 @@ p {
 
 .outer-container {
   background: $primary;
-  max-width: 75vw;
-  margin: auto;
-  margin-top: 2.5vh;
+  max-width: 80vw;
+  margin: 2.5vh auto;
 }
 
 .inner-container {
