@@ -7,7 +7,7 @@ a.href = "#attempts";
 a.textContent = "Click here to return to the top";
 returnToTop.appendChild(a);
 
-function yahtzee() {
+function autoYahtzee() {
   let dice = [];
   let diceRoll;
   let isYahtzee = false;
@@ -77,4 +77,6 @@ function createRoll(rolledDice, isWinningRoll) {
     document.body.appendChild(returnToTop);
 }
 
-yahtzee();
+
+if (allRolls === true)
+  autoYahtzee();
