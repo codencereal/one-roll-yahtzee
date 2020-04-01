@@ -13,7 +13,6 @@ h1 {
   width: fit-content;
   margin: auto;
   @include Sen-bold();
-  color: $text-colour;
 }
 
 .container {
@@ -53,7 +52,6 @@ h1 {
 
     label {
       @include Roboto-normal();
-      color: $text-colour;
     }
     .primary-btn {
       grid-column: 1 / span 2;

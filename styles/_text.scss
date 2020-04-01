@@ -4,9 +4,11 @@
   font-family: 'Sen', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
+  color: $text-colour;
 }
 
 @mixin Roboto-normal {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
+  color: $text-colour;
 }

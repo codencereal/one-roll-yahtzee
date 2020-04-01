@@ -1,4 +1,17 @@
-@import 'main';
+@import 'reset';
+@import 'variables';
+@import 'buttons';
+@import 'header';
+@import 'text';
+
+body {
+  height: 100vh;
+  background: $bg;
+}
+
+h1 {
+  @include Sen-bold();
+}
 
 #attempts {
   padding-top: 1.25rem;
