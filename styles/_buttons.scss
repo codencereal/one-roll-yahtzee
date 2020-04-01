@@ -5,7 +5,25 @@
   color: $text-colour;
   text-decoration: none;
   text-align: center;
-  background: $secondary;
+  background: $primary-btn;
+  border-radius: 20px;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: #00b1dd;
+  }
+}
+
+.secondary-btn {
+  font-family: 'Sen', sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: $text-colour;
+  text-decoration: none;
+  text-align: center;
+  background: $secondary-btn;
   border-radius: 20px;
   padding: 1rem;
   border: none;
