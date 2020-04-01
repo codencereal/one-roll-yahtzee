@@ -40,6 +40,10 @@ h2 {
   }
 }
 
+#roll-btn {
+  display: none;
+}
+
 #sarcastic-warning {
   @include h1-padding();
   @include flex-center();
@@ -63,7 +67,10 @@ h2 {
 }
 
 .buttons {
-  @include flex-center();
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .rolls {
