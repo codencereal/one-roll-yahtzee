@@ -3,6 +3,7 @@
 @import 'buttons';
 @import 'header';
 @import 'text';
+@import 'mixins';
 
 body {
   height: 100vh;
@@ -15,9 +16,28 @@ h1 {
 
 #attempts {
   padding-top: 1.25rem;
+  @include flex-center();
 }
 
-.container {
+@include dice();
+
+.rolls {
+  @include flex-center();
+}
+
+p {
+  @include Roboto-large();
+  width: fit-content;
+}
+
+.outer-container {
+  background: $primary;
+  max-width: 75vw;
+  margin: auto;
+  margin-top: 2.5vh;
+}
+
+.inner-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }

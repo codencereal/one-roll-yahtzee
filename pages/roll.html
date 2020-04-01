@@ -11,16 +11,18 @@
   <header>
     <h1>One Roll Yahtzee</h1>
   </header>
-  <h1 id="attempts">You got 5 $number in $attempts attempts</h1>
-  <div class="container">
-    <div class="dice">
-      <img class="die" src="../img/dice-1.png" alt="Dice #1">
-      <img class="die" src="../img/dice-1.png" alt="Dice #2">
-      <img class="die" src="../img/dice-1.png" alt="Dice #3">
-      <img class="die" src="../img/dice-1.png" alt="Dice #4">
-      <img class="die" src="../img/dice-1.png" alt="Dice #5">
+  <div class="outer-container"> <!--This will serve as a template to generate the other containers using Javascript-->
+    <h1 id="attempts">You got 5 $number in $attempts attempts</h1>
+    <div class="inner-container">
+      <div class="dice">
+        <img class="die" src="../img/dice-1.png" alt="Dice #1">
+        <img class="die" src="../img/dice-1.png" alt="Dice #2">
+        <img class="die" src="../img/dice-1.png" alt="Dice #3">
+        <img class="die" src="../img/dice-1.png" alt="Dice #4">
+        <img class="die" src="../img/dice-1.png" alt="Dice #5">
+      </div>
+      <div class="rolls"><p>$1,$1,$1,$1,$1</p></div>
     </div>
-    <div class="rolls"><p>$1,$1,$1,$1,$1</p></div>
   </div>
 </body>
 </html>

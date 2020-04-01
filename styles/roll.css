@@ -99,9 +99,62 @@ h1 {
 
 #attempts {
   padding-top: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.container {
+.dice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 1.5rem;
+}
+
+.die {
+  border-radius: 10%;
+  width: 10vw;
+}
+
+.rolls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.outer-container {
+  background: #007896;
+  max-width: 75vw;
+  margin: auto;
+  margin-top: 2.5vh;
+}
+
+.inner-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 1fr;
