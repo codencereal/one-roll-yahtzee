@@ -80,3 +80,5 @@ function createRoll(rolledDice, isWinningRoll) {
 
 if (allRolls === true)
   autoYahtzee();
+else
+  manualYahtzee();
