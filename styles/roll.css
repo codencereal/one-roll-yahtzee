@@ -100,4 +100,11 @@ h1 {
 #attempts {
   padding-top: 1.25rem;
 }
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+}
 /*# sourceMappingURL=roll.css.map */

@@ -16,3 +16,8 @@ h1 {
 #attempts {
   padding-top: 1.25rem;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
