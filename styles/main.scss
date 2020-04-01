@@ -3,6 +3,7 @@
 @import 'buttons';
 @import 'header';
 @import 'text';
+@import 'mixins';
 
 body {
   background: $bg;
@@ -30,17 +31,7 @@ h1 {
     text-align: center;
   }
 
-  .dice {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    padding-top: 1.5rem;
-  }
-
-  .die {
-    border-radius: 10%;
-    width: 10vw;
-  }
+  @include dice();
 
   #options {
     padding: 2rem 0;

@@ -1,0 +1,13 @@
+@mixin dice {
+  .dice {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+  }
+
+  .die {
+    border-radius: 10%;
+    width: 10vw;
+  }
+}
