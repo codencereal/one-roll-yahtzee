@@ -1,29 +1,59 @@
 let manualRoll = sessionStorage.getItem('manualRoll') == 'true';
 let allRolls = sessionStorage.getItem('allRolls') == 'true';
 
-let foo = 1;
-document.getElementById('attempts').textContent = 'You got 5 ' + foo + '\'s in ' + foo + ' attempts';
+function yahtzee() {
+  let dice = [];
+  let diceRoll;
+  let isYahtzee = false;
+  let attempts = 0;
+  let temp = 1;
+  let numberOfSides = 6;
+  let attemptsText = document.getElementById("attempts");
 
-function createRoll() {
+  while (!isYahtzee){
+    for (let i = 0; i < 5; i++) { // Generates 5 random numbers from 1-6
+      diceRoll = Math.floor((Math.random() * numberOfSides) + 1);
+      dice[i] = diceRoll;
+    }
+
+    for (let i = 1; i <= 5; i++) {
+      if (dice[i-1] === dice[i]) { // Checks each item in the array to see if it matches the previous item
+        temp++;
+      } else {
+        temp = 0;
+        createRoll(dice);
+        break;
+      }
+      if (temp === 4) {
+        console.log('Yahtzee!!');
+        isYahtzee = true;
+      }
+    }
+    attempts++;
+  }
+  attemptsText.textContent = 'You rolled five ' + dice[0] + 's in ' + attempts + ' attempts';
+  console.log('You rolled five ' + dice[0] + 's in ' + attempts + ' attempts');
+}
+
+function createRoll(rolledDice) {
   let outerDiv = document.createElement("div");
   let innerDiv = document.createElement("div");
   let dice = document.createElement("div");
   let rolls = document.createElement("div");
   let p = document.createElement("p");
-  let dieArray = []
+  let dieArray = [];
 
   outerDiv.className = "outer-container";
   innerDiv.className = "inner-container";
   dice.className = "dice";
   rolls.className = "rolls";
 
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < rolledDice.length; i++) {
     dieArray.push(document.createElement("img"));
     dieArray[i].className = "die";
-    dieArray[i].src = "../img/dice-" + 1 + ".png"; //Will edit to display the die corresponding to the number rolled
+    dieArray[i].src = "../img/dice-" + rolledDice[i] + ".png";
+    p.textContent += rolledDice[i].toString() + ((i !== rolledDice.length-1) ? ", " : "");
   }
-
-  p.textContent = "foo";
 
   rolls.appendChild(p);
 
@@ -36,4 +66,4 @@ function createRoll() {
   document.body.appendChild(outerDiv);
 }
 
-createRoll();
+yahtzee();
