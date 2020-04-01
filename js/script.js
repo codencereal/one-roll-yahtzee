@@ -42,6 +42,10 @@ function autoYahtzee() {
   console.log('You rolled five ' + dice[0] + 's in ' + attempts + ' attempts');
 }
 
+function manualYahtzee() {
+
+}
+
 function createRoll(rolledDice, isWinningRoll) {
   let outerDiv = document.createElement("div");
   let innerDiv = document.createElement("div");
@@ -76,7 +80,6 @@ function createRoll(rolledDice, isWinningRoll) {
   if (isWinningRoll)
     document.body.appendChild(returnToTop);
 }
-
 
 if (allRolls === true)
   autoYahtzee();

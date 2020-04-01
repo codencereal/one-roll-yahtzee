@@ -11,7 +11,7 @@ function getOptionsAndRedirect() {
     window.location.replace("../pages/instaroll.html");
   }
   else {
-    window.location.replace("../pages/foo.html");
+    window.location.replace("../pages/manualroll.html");
   }
 }
 
