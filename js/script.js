@@ -1,5 +1,6 @@
 let manualRoll = sessionStorage.getItem('manualRoll') == 'true';
 let allRolls = sessionStorage.getItem('allRolls') == 'true';
+sessionStorage.setItem('numberOfManualRolls', '0');
 let returnToTop = document.createElement("h2");
 let a = document.createElement("a");
 returnToTop.id = "return-to-top";
@@ -38,12 +39,12 @@ function autoYahtzee() {
   console.log('You rolled five ' + dice[0] + 's in ' + attempts + ' attempts');
 }
 
-function manualYahtzee() {
+function manualYahtzee(attempts) {
   let dice = [];
   let isYahtzee = false;
-  let attempts = 0;
   let temp = 1;
   let numberOfSides = 6;
+  let attemptsText = document.getElementById("attempts");
   let startBtn = document.getElementById("start-btn");
   startBtn.textContent = "Roll";
 
@@ -63,6 +64,9 @@ function manualYahtzee() {
       updateDice(dice, isYahtzee);
     }
   }
+  attempts++;
+  attemptsText.textContent = "Attempts: " + attempts;
+  sessionStorage.setItem('numberOfManualRolls', attempts.toString());
 }
 
 function createRoll(rolledDice, isWinningRoll) {
