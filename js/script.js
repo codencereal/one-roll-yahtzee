@@ -3,6 +3,9 @@ let allRolls = sessionStorage.getItem('allRolls') == 'true';
 sessionStorage.setItem('numberOfManualRolls', '0');
 let returnToTop = document.createElement("h2");
 let a = document.createElement("a");
+let startBtn = document.getElementById("start-btn");
+let restartBtn = document.getElementById("restart-btn");
+restartBtn.style.display = "none";
 returnToTop.id = "return-to-top";
 a.href = "#attempts";
 a.textContent = "Click here to return to the top";
@@ -112,6 +115,8 @@ function updateDice(rolledDice, isWinningRoll) {
   if (isWinningRoll) {
     let container = document.getElementById("container");
     container.id = "winning-roll";
+    startBtn.style.display = "none";
+    restartBtn.style.display = "block";
   }
 }
 
