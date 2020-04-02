@@ -1,15 +1,23 @@
-let manualRoll = sessionStorage.getItem('manualRoll') == 'true';
-let allRolls = sessionStorage.getItem('allRolls') == 'true';
-sessionStorage.setItem('numberOfManualRolls', '0');
-let returnToTop = document.createElement("h2");
-let a = document.createElement("a");
-let startBtn = document.getElementById("start-btn");
-let restartBtn = document.getElementById("restart-btn");
-restartBtn.style.display = "none";
-returnToTop.id = "return-to-top";
-a.href = "#attempts";
-a.textContent = "Click here to return to the top";
-returnToTop.appendChild(a);
+let returnToTop;
+function init() {
+  let manualRoll = sessionStorage.getItem('manualRoll') == 'true';
+  let allRolls = sessionStorage.getItem('allRolls') == 'true';
+  
+  if (manualRoll && !allRolls) {
+    sessionStorage.setItem('numberOfManualRolls', '0');
+    let startBtn = document.getElementById("start-btn");
+    let restartBtn = document.getElementById("restart-btn");
+    restartBtn.style.display = "none";
+  } else if (!manualRoll && allRolls) {
+    returnToTop = document.createElement("h2");
+    let a = document.createElement("a");
+    returnToTop.id = "return-to-top";
+    a.href = "#attempts";
+    a.textContent = "Click here to return to the top";
+    returnToTop.appendChild(a);
+    autoYahtzee();
+  }
+}
 
 function autoYahtzee() {
   let dice = [];
@@ -128,5 +136,4 @@ function rollDice(dice, numberOfSides, numberofDice) {
   }
 }
 
-if (allRolls === true)
-  autoYahtzee();
+init();
