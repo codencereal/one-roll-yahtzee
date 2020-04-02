@@ -54,13 +54,13 @@ function manualYahtzee() {
       temp++;
     } else {
       temp = 0;
-      updateDice(dice);
+      updateDice(dice, isYahtzee);
       break;
     }
     if (temp === 4) {
       console.log('Yahtzee!!');
-      updateDice(dice);
       isYahtzee = true;
+      updateDice(dice, isYahtzee);
     }
   }
 }
@@ -100,10 +100,14 @@ function createRoll(rolledDice, isWinningRoll) {
     document.body.appendChild(returnToTop);
 }
 
-function updateDice(rolledDice) {
+function updateDice(rolledDice, isWinningRoll) {
   for (let i = 1; i < 6; i++) {
     let die = document.getElementById('die-' + i.toString());
     die.src = "../img/dice-" + rolledDice[i-1] + ".png";
+  }
+  if (isWinningRoll) {
+    let container = document.getElementById("container");
+    container.id = "winning-roll";
   }
 }
 
