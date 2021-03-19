@@ -6,12 +6,10 @@ function getOptionsAndRedirect() {
 
   if (!allRolls && !manualRoll) {
     location.reload;
-  }
-  else if (allRolls && !manualRoll) {
-    window.location.replace("../pages/instaroll.html");
-  }
-  else {
-    window.location.replace("../pages/manualroll.html");
+  } else if (allRolls && !manualRoll) {
+    window.location.replace('./instaroll.html');
+  } else {
+    window.location.replace('./manualroll.html');
   }
 }
 
@@ -20,7 +18,7 @@ function init() {
   document.getElementById('all-rolls').checked = false;
   for (let i = 1; i <= 5; i++) {
     let die = document.getElementById('die-' + i.toString());
-    die.src = "../img/dice-" + Math.floor((Math.random() * 6) + 1) + ".png";
+    die.src = '../img/dice-' + Math.floor(Math.random() * 6 + 1) + '.png';
   }
 }
 
