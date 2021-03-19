@@ -18,7 +18,7 @@ function init() {
   document.getElementById('all-rolls').checked = false;
   for (let i = 1; i <= 5; i++) {
     let die = document.getElementById('die-' + i.toString());
-    die.src = '../img/dice-' + Math.floor(Math.random() * 6 + 1) + '.png';
+    die.src = './img/dice-' + Math.floor(Math.random() * 6 + 1) + '.png';
   }
 }
 
