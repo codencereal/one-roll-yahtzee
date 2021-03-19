@@ -100,7 +100,7 @@ function createRoll(rolledDice, isWinningRoll) {
   for (let i = 0; i < rolledDice.length; i++) {
     dieArray.push(document.createElement('img'));
     dieArray[i].className = 'die';
-    dieArray[i].src = '../img/dice-' + rolledDice[i] + '.png';
+    dieArray[i].src = './img/dice-' + rolledDice[i] + '.png';
     p.textContent +=
       rolledDice[i].toString() + (i !== rolledDice.length - 1 ? ', ' : '');
   }
@@ -119,7 +119,7 @@ function createRoll(rolledDice, isWinningRoll) {
 function updateDice(rolledDice, isWinningRoll) {
   for (let i = 1; i < 6; i++) {
     let die = document.getElementById('die-' + i.toString());
-    die.src = '../img/dice-' + rolledDice[i - 1] + '.png';
+    die.src = './img/dice-' + rolledDice[i - 1] + '.png';
   }
   if (isWinningRoll) {
     let container = document.getElementById('container');
